@@ -1,33 +1,2074 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/loading.css" />
 
-    <link rel="stylesheet" href="styles/loading.css">
+    <script src="scripts/main.js" defer></script>
 
     <title>Civil Engineering - Virtual Labs</title>
-</head>
-<body>
-    <body style="margin: 0; border: 2px solid red; font-family: verdana; color: #000;">
-        <table align="center">
-            <tr>
-                <td>
-                    <div id="simscreen">
-                        <div id="title">
-                            <h3>Angularity Test</h3>
-                        </div>
-                        
-                    </div>
-                </td>
-            </tr>
-        </table>
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-img" src="images/header.png" alt="virtual-lab-logo" />
+      <h2 class="subject">Virtual Lab</h2>
+      <img class="header-img2" src="images/dei.jpg" alt="dei-logo" />
+    </div>
+
+    <div class="topnav" id="myHeader">
+      <a class="active" href="#home"></a>
+      <a href="#news"></a>
+      <a href="#about"></a>
+    </div>
+
+    <body style="margin: 0; font-family: verdana; color: #000">
+      <table style="align-items: center" align="center">
+        <tr>
+          <td>
+            <div id="simscreen">
+              <div id="title">
+                <h3>Angularity Test</h3>
+              </div>
+
+              <!-- Step 1 -->
+
+              <div
+                class="mainstep"
+                id="step1"
+                style="visibility: visible; z-index: 1000"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;1&nbsp;</span
+                ><br />
+
+                <p
+                  class="incanvas"
+                  style="
+                    position: absolute;
+                    top: 55px;
+                    left: 0px;
+                    font-size: 15px;
+                  "
+                >
+                  <strong>Objective:</strong>
+                </p>
+
+                <p
+                  class="incanvas"
+                  style="position: absolute; top: 85px; left: 0px; font: 15px"
+                >
+                  determine the angularity number of aggregate.
+                </p>
+
+                <p
+                  class="incanvas"
+                  style="
+                    position: absolute;
+                    top: 115px;
+                    left: 0px;
+                    font-size: 14px;
+                  "
+                >
+                  <strong>Appratus used:</strong>
+                </p>
+
+                <p
+                  class="incanvas"
+                  style="
+                    position: absolute;
+                    top: 145px;
+                    left: 0px;
+                    font-size: 15px;
+                  "
+                >
+                  BS test sieves: 20.0 mm, 14.00 mm, 10.00 mm, 6.30 mm, 5.0 mm,
+                  a balance of capacity 10kg and accurate to 1, a metal
+                  cylinder(150mm * 150mm)
+                </p>
+
+                <img
+                  src="images/step1-png1.png"
+                  alt="There will be all appratus picture"
+                  width="550px"
+                  height="330px"
+                  style="padding-left: 7%; margin-top: 200px"
+                />
+
+                <!-- NEXT BUTTON  -->
+
+                <input
+                  type="button"
+                  id="next-to-step2"
+                  style="
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Start Here&nbsp;"
+                  onclick="step2()"
+                />
+              </div>
+
+              <!-- Step 2 -->
+
+              <div
+                class="mainstep"
+                id="step2"
+                style="visibility: hidden; z-index: 999"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;2&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Keep the metal cylinder on the weighing balance, then
+                    TARE the balance.&nbsp;
+                  </i></span
+                >
+
+                <!-- **Bro Tip -- Varun Pal Singh
+please use border to place and visualize arrows, transbox and all html elements **   -->
+
+                <!-- IMAGES  -->
+
+                <img
+                  id="png1"
+                  class="board"
+                  src="images/Angularity Test-1.png"
+                  alt="picture"
+                  width="605"
+                  height="385"
+                  style="
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  id="png2"
+                  class="board"
+                  src="images/Angularity Test-2.png"
+                  alt="picture"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  id="gif1"
+                  src="images/empty-weight-gif-1.gif"
+                  alt="picture"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step2-return-gif.gif"
+                  alt="gif"
+                  id="gif2"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 200px;
+                  "
+                />
+
+                <img
+                  id="arr2"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="70"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 6rem;
+                    margin-top: 480px;
+                    /* border: 1px solid red; */
+                  "
+                />
+
+                <img
+                  id="arr3"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 19rem;
+                    margin-top: 400px;
+                    /* border: 1px solid red; */
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="110"
+                  height="140"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 540px;
+                    margin-top: 160px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="movebeaker1Step2()"
+                />
+
+                <img
+                  id="trans2"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="30"
+                  height="30"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 155px;
+                    margin-top: 495px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="clickTare1Step2()"
+                />
+
+                <img
+                  id="trans3"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="110"
+                  height="140"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 185px;
+                    margin-top: 330px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="movebeaker2Step2()"
+                />
+
+                <!-- NEXT BUTTON  -->
+
+                <input
+                  type="button"
+                  id="next-to-step3"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step3()"
+                />
+              </div>
+
+              <!-- STEP 3 -->
+
+              <div
+                class="mainstep"
+                id="step3"
+                style="visibility: hidden; z-index: 998"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;3&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Fill the cylinder with water.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step3-png1.png"
+                  alt="there will be a picture same as GIF (starting point) played"
+                  class="board"
+                  id="png1-step3"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+                <img
+                  src="images/water-pouring-gif.gif"
+                  alt="gif"
+                  id="gif1-step3"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step3"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 200px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step3"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="100"
+                  height="120"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 550px;
+                    margin-top: 175px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="movebeaker1Step3()"
+                />
+
+                <!-- NEXT BUTTON  -->
+
+                <input
+                  type="button"
+                  id="next-to-step4"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step4()"
+                />
+              </div>
+
+              <!-- STEP 4 -->
+
+              <div
+                class="mainstep"
+                id="step4"
+                style="visibility: hidden; z-index: 997"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;4&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Record the volume of water filled inside the metal
+                    cylinder.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step4-png1.png"
+                  alt="there will be a picture same as GIF (starting point) played"
+                  class="board"
+                  id="png1-step4"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step4-water-weight-gif.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step4"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step4"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 200px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step4"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="110"
+                  height="140"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 540px;
+                    margin-top: 160px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="movebeaker1Step4()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step5"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step5()"
+                />
+              </div>
+
+              <!-- STEP 5  -->
+
+              <div
+                class="mainstep"
+                id="step5"
+                style="visibility: hidden; z-index: 996"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;5&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Place the tray on the balance and TARE the
+                    balance.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step5-png1.png"
+                  alt="there will be a picture same as GIF (starting point) played"
+                  class="board"
+                  id="png1-step5"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step5-empty-tray-weighting-gif.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step5"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step5-empty-tray-return-gif.gif"
+                  alt="image"
+                  class="board"
+                  id="gif2-step5"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step5"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 220px;
+                  "
+                />
+
+                <img
+                  id="arr2-step5"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="70"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 6rem;
+                    margin-top: 480px;
+                    /* border: 1px solid red; */
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step5"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="210"
+                  height="70"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 440px;
+                    margin-top: 210px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveplate1Step5()"
+                />
+
+                <img
+                  id="trans2-step5"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="30"
+                  height="30"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 155px;
+                    margin-top: 495px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="clickTare1Step5()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step6"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step6()"
+                />
+              </div>
+
+              <!-- STEP 6 -->
+
+              <div
+                class="mainstep"
+                id="step6"
+                style="visibility: hidden; z-index: 995"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;6&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Take sufficient quantity of aggregate in the tray and
+                    weigh them.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step6-png1.png"
+                  alt="there will be a picture same as GIF (starting point) played"
+                  class="board"
+                  id="png1-step6"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step6-aggregates-weight-gif.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step6"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step6"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="85"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 220px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step6"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="210"
+                  height="70"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 440px;
+                    margin-top: 210px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveplate1Step6()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step7"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step7()"
+                />
+              </div>
+
+              <!-- STEP 7 -->
+
+              <div
+                class="mainstep"
+                id="step7"
+                style="visibility: hidden; z-index: 994"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;7&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Arrange the sieves in descending order, with the
+                    largest aperture size at the top and the smallest one at the
+                    bottom and place a pan below the lower most sieve.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step7-assemble-sieves.png"
+                  alt="image"
+                  class="board"
+                  id="png1-step7"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 120px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step7-seives-assembling.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step7"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 120px;
+                  "
+                />
+
+                <!-- Button to Assemble the sieves  -->
+
+                <input
+                  type="button"
+                  id="assembleSieves1-step7"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 335px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Assemble&nbsp;"
+                  onclick="sieveAssemble1Step7()"
+                />
+
+                <!-- Next Button  -->
+
+                <input
+                  type="button"
+                  id="next-to-step8"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step8()"
+                />
+              </div>
+
+              <!-- STEP 8  -->
+
+              <div
+                class="mainstep"
+                id="step8"
+                style="visibility: hidden; z-index: 993"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;8&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 85px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Now, put the weighed aggregates on the sieve
+                    stack.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step8-png1.png"
+                  alt="image"
+                  class="board"
+                  id="png1-step8"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step8-aggregate-pouring.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step8"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step8"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 4rem;
+                    margin-top: 320px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step8"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="145"
+                  height="60"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 135px;
+                    margin-top: 310px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveplate1Step8()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step9"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step9()"
+                />
+              </div>
+
+              <!-- STEP 9  -->
+
+              <div
+                class="mainstep"
+                id="step9"
+                style="visibility: hidden; z-index: 992"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;9&nbsp;</span
+                >
+
+                <span
+                  style="position: absolute; left: 85px; top: 30px"
+                  id="title-step9"
+                  ><i
+                    class="fa fa-hand-o-right"
+                    aria-hidden="true"
+                    id="step9-content"
+                  >
+                    &nbsp;Cover the sieve stack with the lid and place it on the
+                    sieve shaker. Start the sieve shaker, and after some time,
+                    remove the sieves and record the aggregates collected in
+                    each sieve.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step9-png1.png"
+                  alt="image"
+                  class="board"
+                  id="png1-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step9-png2.png"
+                  alt="image"
+                  class="board"
+                  id="png2-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step9-gif1.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step9-gif2.gif"
+                  alt="image"
+                  class="board"
+                  id="gif2-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step9-gif3.gif"
+                  alt="image"
+                  class="board"
+                  id="gif3-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  src="images/step9-gif4.gif"
+                  alt="image"
+                  class="board"
+                  id="gif4-step9"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step9"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 0.1rem;
+                    margin-top: 150px;
+                  "
+                />
+
+                <img
+                  id="arr2-step9"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 0.1rem;
+                    margin-top: 375px;
+                  "
+                />
+
+                <img
+                  id="arr3-step9"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="40"
+                  height="30"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 28.5rem;
+                    margin-top: 440px;
+                  "
+                />
+
+                <img
+                  id="arr4-step9"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 33rem;
+                    margin-top: 175px;
+                  "
+                />
+
+                <img
+                  id="arr5-step9"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 4rem;
+                    margin-top: 375px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step9"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="145"
+                  height="60"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 75px;
+                    margin-top: 150px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveSieves1Step9()"
+                />
+
+                <img
+                  id="trans2-step9"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="145"
+                  height="230"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 75px;
+                    margin-top: 300px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveSieves2Step9()"
+                />
+
+                <img
+                  id="trans3-step9"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="30"
+                  height="30"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 435px;
+                    margin-top: 440px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveSieves3Step9()"
+                />
+
+                <img
+                  id="trans4-step9"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="160"
+                  height="75"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 370px;
+                    margin-top: 190px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveSieves4Step9()"
+                />
+
+                <img
+                  id="trans5-step9"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="145"
+                  height="230"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 150px;
+                    margin-top: 300px;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveSieves5Step9()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step10"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step10()"
+                />
+              </div>
+
+              <!-- STEP 10  -->
+
+              <div
+                class="mainstep"
+                id="step10"
+                style="visibility: hidden; z-index: 991"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;10&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 100px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Fill the aggregate in the metal cylinder in three
+                    layers. Compact each layer uniformly by giving 100 blows
+                    using a tamping rod and then remove off the excess aggregate
+                    with the tamping rod.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step10-png1.png"
+                  alt="image"
+                  class="board"
+                  id="png1-step10"
+                  width="250"
+                  height="90"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 215px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step10-gif1.gif"
+                  alt="image"
+                  class="board"
+                  id="gif1-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <img
+                  src="images/step10-gif2.gif"
+                  alt="image"
+                  class="board"
+                  id="gif2-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <img
+                  src="images/step10-gif3.gif"
+                  alt="image"
+                  class="board"
+                  id="gif3-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <img
+                  src="images/step10-gif4.gif"
+                  alt="image"
+                  class="board"
+                  id="gif4-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <img
+                  src="images/step10-gif5.gif"
+                  alt="image"
+                  class="board"
+                  id="gif5-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <img
+                  src="images/step10-gif6.gif"
+                  alt="image"
+                  class="board"
+                  id="gif6-step10"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                    background-color: #dce5ec;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step10"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 0.1rem;
+                    margin-top: 240px;
+                  "
+                />
+
+                <img
+                  id="arr2-step10"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 38rem;
+                    margin-top: 240px;
+                  "
+                />
+
+                <img
+                  id="arr3-step10"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 0.1rem;
+                    margin-top: 240px;
+                  "
+                />
+
+                <img
+                  id="arr4-step10"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 38rem;
+                    margin-top: 240px;
+                  "
+                />
+
+                <img
+                  id="arr5-step10"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 0.1rem;
+                    margin-top: 240px;
+                  "
+                />
+
+                <img
+                  id="arr6-step10"
+                  class="board"
+                  src="images/arrow right.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 18rem;
+                    margin-top: 260px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="230"
+                  height="80"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 80px;
+                    margin-top: 220px;
+                    /* border: 1px solid black; */
+                    cursor: pointer;
+                  "
+                  onclick="moveplate1Step10()"
+                />
+
+                <img
+                  id="trans2-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="20"
+                  height="220"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 595px;
+                    margin-top: 145px;
+                    /* border: 1px solid red; */
+                    cursor: pointer;
+                  "
+                  onclick="moveRod1Step10()"
+                />
+
+                <img
+                  id="trans3-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="230"
+                  height="80"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 80px;
+                    margin-top: 220px;
+                    cursor: pointer;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveplate2Step10()"
+                />
+
+                <img
+                  id="trans4-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="20"
+                  height="220"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 595px;
+                    margin-top: 145px;
+                    /* border: 1px solid red; */
+                    cursor: pointer;
+                  "
+                  onclick="moveRod2Step10()"
+                />
+
+                <img
+                  id="trans5-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="230"
+                  height="80"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 80px;
+                    margin-top: 220px;
+                    cursor: pointer;
+                    /* border: 1px solid red; */
+                  "
+                  onclick="moveplate3Step10()"
+                />
+
+                <img
+                  id="trans6-step10"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="22"
+                  height="215"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 358px;
+                    margin-top: 180px;
+                    /* border: 1px solid red; */
+                    cursor: pointer;
+                  "
+                  onclick="moveRod3Step10()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step11"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step11()"
+                />
+              </div>
+
+              <!-- STEP 11  -->
+
+              <div
+                class="mainstep"
+                id="step11"
+                style="visibility: hidden; z-index: 991"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;11&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 100px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Weigh the aggregates with the cylinder.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step11-png1.png"
+                  id="png1-step11"
+                  alt="there will be a picture same as GIF (starting point) played"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step11-gif1.gif"
+                  id="gif1-step11"
+                  alt="image"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step11"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 40rem;
+                    margin-top: 200px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step11"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="110"
+                  height="140"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 540px;
+                    margin-top: 160px;
+                    /* border: 1px solid red; */
+                    cursor: pointer;
+                  "
+                  onclick="movebeaker1Step11()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step12"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step12()"
+                />
+              </div>
+
+              <!-- STEP 12  -->
+
+              <div
+                class="mainstep"
+                id="step12"
+                style="visibility: hidden; z-index: 991"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;12&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 100px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Make three separate descriptions and determine the
+                    average weight of aggregates in the cylinder.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <img
+                  src="images/step12-png1.png"
+                  id="png1-step12"
+                  alt="image"
+                  class="board"
+                  width="605"
+                  height="150"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 100px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <img
+                  src="images/step12-gif1.gif"
+                  id="png1-step12"
+                  alt="image"
+                  class="board"
+                  width="605"
+                  height="385"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- ARROWS  -->
+
+                <img
+                  id="arr1-step12"
+                  class="board"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 43rem;
+                    margin-top: 150px;
+                  "
+                />
+
+                <!-- TRANSBOXES  -->
+
+                <img
+                  id="trans1-step12"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="120"
+                  height="150"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 600px;
+                    margin-top: 175px;
+                    /* border: 1px solid black; */
+                    cursor: pointer;
+                  "
+                  onclick="movebeaker1Step12()"
+                />
+
+                <input
+                  type="button"
+                  id="next-to-step13"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step13()"
+                />
+              </div>
+
+              <!-- STEP 13  -->
+
+              <div
+                class="mainstep"
+                id="step13"
+                style="visibility: hidden; z-index: 991"
+              >
+                <strong
+                  class="incanvas"
+                  style="position: absolute; top: 20px; left: 0px"
+                  >STEP</strong
+                >
+
+                <span
+                  class="circlebg"
+                  style="position: absolute; top: 28px; left: 57px"
+                  >&nbsp;13&nbsp;</span
+                >
+
+                <span style="position: absolute; left: 100px; top: 30px"
+                  ><i class="fa fa-hand-o-right" aria-hidden="true">
+                    &nbsp;Content will come here.&nbsp;
+                  </i></span
+                >
+
+                <!-- IMAGES  -->
+
+                <!-- GIFS  -->
+
+                <!-- ARROWS  -->
+
+                <!-- TRANSBOXES  -->
+
+                <input
+                  type="button"
+                  id="next-to-step14"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    left: 662px;
+                    top: 450px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: #2150a0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: #fff;
+                  "
+                  value="&nbsp;Next&nbsp;"
+                  onclick="step14()"
+                />
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </body>
-</body>
+  </body>
 </html>
