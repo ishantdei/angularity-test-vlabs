@@ -46,7 +46,7 @@
               <div
                 class="mainstep"
                 id="step1"
-                style="visibility: visible; z-index: 1000"
+                style="visibility: hidden; z-index: 1000"
               >
                 <strong
                   class="incanvas"
@@ -1879,7 +1879,7 @@ please use border to place and visualize arrows, transbox and all html elements 
                   type="button"
                   id="next-to-step12"
                   style="
-                    visibility: hidden;
+                    visibility: visible;
                     position: absolute;
                     left: 662px;
                     top: 450px;
@@ -1938,11 +1938,41 @@ please use border to place and visualize arrows, transbox and all html elements 
                   "
                 />
 
-                <!-- GIFS  -->
+                <img
+                  src="images/step12-png2.png"
+                  id="png2-step12"
+                  alt="image"
+                  class="board"
+                  width="605"
+                  height="150"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 100px;
+                  "
+                />
 
                 <img
+                  src="images/step12-png3.png"
+                  id="png3-step12"
+                  alt="image"
+                  class="board"
+                  width="605"
+                  height="150"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 70px;
+                    margin-top: 100px;
+                  "
+                />
+
+                <!-- GIFS  -->
+
+                <!-- <img
                   src="images/step12-gif1.gif"
-                  id="png1-step12"
+                  id="gif1-step12"
                   alt="image"
                   class="board"
                   width="605"
@@ -1953,13 +1983,13 @@ please use border to place and visualize arrows, transbox and all html elements 
                     margin-left: 70px;
                     margin-top: 150px;
                   "
-                />
+                /> -->
 
                 <!-- ARROWS  -->
 
                 <img
                   id="arr1-step12"
-                  class="board"
+                  class="arr1-strp12"
                   src="images/arrow left.gif"
                   alt="picture"
                   width="80"
@@ -1967,8 +1997,23 @@ please use border to place and visualize arrows, transbox and all html elements 
                   style="
                     visibility: hidden;
                     position: absolute;
-                    margin-left: 43rem;
-                    margin-top: 150px;
+                    margin-left: 41em;
+                    margin-top: 170px;
+                  "
+                />
+
+                <img
+                  id="arr2-step12"
+                  class="arr2-strp12"
+                  src="images/arrow left.gif"
+                  alt="picture"
+                  width="80"
+                  height="50"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    margin-left: 42em;
+                    margin-top: 200px;
                   "
                 />
 
@@ -1979,21 +2024,40 @@ please use border to place and visualize arrows, transbox and all html elements 
                   class="board"
                   src="images/transbox.png"
                   alt="picture"
-                  width="120"
-                  height="150"
+                  width="150"
+                  height="70"
                   style="
                     visibility: hidden;
                     background-color: none;
                     position: absolute;
-                    margin-left: 600px;
-                    margin-top: 175px;
+                    margin-left: 520px;
+                    margin-top: 185px;
                     /* border: 1px solid black; */
                     cursor: pointer;
                   "
-                  onclick="movebeaker1Step12()"
+                  onclick="changeResult1Step12()"
                 />
 
-                <input
+                <img
+                  id="trans2-step12"
+                  class="board"
+                  src="images/transbox.png"
+                  alt="picture"
+                  width="150"
+                  height="70"
+                  style="
+                    visibility: hidden;
+                    background-color: none;
+                    position: absolute;
+                    margin-left: 520px;
+                    margin-top: 185px;
+                    /* border: 1px solid black; */
+                    cursor: pointer;
+                  "
+                  onclick="changeResult2Step12()"
+                />
+
+                <!-- <input
                   type="button"
                   id="next-to-step13"
                   style="
@@ -2010,60 +2074,7 @@ please use border to place and visualize arrows, transbox and all html elements 
                   "
                   value="&nbsp;Next&nbsp;"
                   onclick="step13()"
-                />
-              </div>
-
-              <!-- STEP 13  -->
-
-              <div
-                class="mainstep"
-                id="step13"
-                style="visibility: hidden; z-index: 991"
-              >
-                <strong
-                  class="incanvas"
-                  style="position: absolute; top: 20px; left: 0px"
-                  >STEP</strong
-                >
-
-                <span
-                  class="circlebg"
-                  style="position: absolute; top: 28px; left: 57px"
-                  >&nbsp;13&nbsp;</span
-                >
-
-                <span style="position: absolute; left: 100px; top: 30px"
-                  ><i class="fa fa-hand-o-right" aria-hidden="true">
-                    &nbsp;Content will come here.&nbsp;
-                  </i></span
-                >
-
-                <!-- IMAGES  -->
-
-                <!-- GIFS  -->
-
-                <!-- ARROWS  -->
-
-                <!-- TRANSBOXES  -->
-
-                <input
-                  type="button"
-                  id="next-to-step14"
-                  style="
-                    visibility: hidden;
-                    position: absolute;
-                    left: 662px;
-                    top: 450px;
-                    cursor: pointer;
-                    font-size: 15px;
-                    background-color: #2150a0;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    color: #fff;
-                  "
-                  value="&nbsp;Next&nbsp;"
-                  onclick="step14()"
-                />
+                /> -->
               </div>
             </div>
           </td>

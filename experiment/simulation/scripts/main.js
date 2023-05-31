@@ -522,3 +522,30 @@ function step12(){
   document.querySelector("#arr1-step12").style.visibility = "visible";
   document.querySelector("#trans1-step12").style.visibility = "visible";
 }
+
+function changeResult1Step12(){
+  document.querySelector("#png1-step12").style.visibility = "hidden";
+  document.querySelector("#arr1-step12").style.visibility = "hidden";
+  document.querySelector("#trans1-step12").style.visibility = "hidden";
+
+  document.querySelector("#png2-step12").style.visibility = "visible";
+
+  myTimeout = setTimeout(myGreeting1Step12, 1000);
+}
+
+function myGreeting1Step12(){
+  document.querySelector("#arr2-step12").style.visibility = "visible"
+  document.querySelector("#trans2-step12").style.visibility = "visible"
+
+  myStopFunction();
+}
+
+function changeResult2Step12(){
+  document.querySelector("#png2-step12").style.visibility = "hidden";
+  document.querySelector("#arr2-step12").style.visibility = "hidden";
+  document.querySelector("#trans2-step12").style.visibility = "hidden";
+
+  document.querySelector("#png3-step12").style.visibility = "visible";
+
+  // myTimeout = setTimeout(myGreeting2Step12, 2500);
+}
